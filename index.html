@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fashion Friday - Coming Soon</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Friday - Coming Soon</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <section class="container">
-    <div class="content">
-      <h1 class="fade-in">Fashion Friday</h1>
-      <p class="fade-in delay-1">Our Fashion Web App is Launching Soon!</p>
-      <img 
-        src="hero.jpg" 
-        alt="Fashion Preview" 
-        class="lazy-image fade-in delay-2" 
-        loading="lazy"
-      />
-      <div class="social fade-in delay-3">
-        <a href="https://instagram.com/fashionfriday.in" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com/fashionfriday.in" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/company/fashionfriday" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <a href="https://wa.me/7558969093?text=Hi%2C%20show%20me%20your%20catalogue" class="whatsapp-button fade-in delay-4" target="_blank">
-        <i class="fab fa-whatsapp"></i> View Catalogue
-      </a>
-    </div>
-  </section>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="imgs/ff_logo.png" alt="Fashion Friday Logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home-section">
+        <div class="overlay">
+            <div class="social-icons">
+                <!-- Instagram Icon -->
+                <div class="icon">
+                    <a href="https://instagram.com/fashionfriday.in" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- WhatsApp Icon -->
+                <div class="icon">
+                    <a href="https://wa.me/7558969093?text=Hey%2C%20I%20want%20to%20buy%20something." target="_blank" aria-label="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <!-- LinkedIn Icon -->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/company/fashionfriday" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- View Catalogue Button -->
+            <a href="https://wa.me/c/917558969093" class="whatsapp-button fade-in delay-4" target="_blank">
+                <i class="fa-solid fa-store"></i> View Catalogue
+            </a>
+        </div>
+    </section>
 </body>
+
 </html>
