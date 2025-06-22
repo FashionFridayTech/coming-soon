@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: #0d0d0d;
+}
+
+.logo {
+    padding-right: 90px;
+    border-right: #b6b6b6 solid 2px;
+}
+
+.logo img {
+    height: 25px;
+    width: auto;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #999;
+}
+
+.right-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.right-controls i {
+    font-size: 22px;
+}
+
+.search-box {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 10px 2%;
+    align-items: center;
+}
+
+.hero-left-gallery {
+    background: url('https://assets.vogue.com/photos/5f74f7d208fdcc6598c7bb75/16:9/w_4095,h_2303,c_limit/_CIK0894.jpg') no-repeat center top/cover;
+    border-radius: 20px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.social-icons{
+    display: flex;
+    color: #fff;
+    gap: 10px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.social-icons i{
+    color: #fff;
+}
+
+.hero-left-gallery h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero-left-gallery h1 span {
+    font-size: 6rem;
+}
+
+.hero-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+    border: white 2px solid;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: larger;
+
+}
+
+.arrow-btn a {
+    color: #ffffff;
+}
+
+.arrow-btn:hover {
+    background-color: #ffffff;
+    a {
+        color: black;
+    }
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+
+.product-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px;
+    background: #fff;
+    color: #000;
+    width: 60%;
+    border-radius: 24px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.product-card div span {
+    font-size: 0.8rem;
+    border: #000 1px solid;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
