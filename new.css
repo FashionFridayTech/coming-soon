@@ -77,19 +77,27 @@ nav ul li:hover {
     gap: 20px;
     padding: 10px 2%;
     align-items: center;
+    position: relative;
+}
+
+.hero-left {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-left-gallery {
     background: url('https://assets.vogue.com/photos/5f74f7d208fdcc6598c7bb75/16:9/w_4095,h_2303,c_limit/_CIK0894.jpg') no-repeat center top/cover;
-    border-radius: 20px;
-    height: 300px;
+    border-radius: 24px;
+    height: 75%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-
 }
+
 
 .social-icons{
     display: flex;
@@ -102,6 +110,11 @@ nav ul li:hover {
 
 .social-icons i{
     color: #fff;
+}
+
+.social-icons i:hover{
+    scale: 1.2;
+    transition: scale 0.3s ease;
 }
 
 .hero-left-gallery h1 {
@@ -117,12 +130,15 @@ nav ul li:hover {
 .hero-desc {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 15px;
     font-size: 1.1rem;
     color: #fff;
+    height: 25%;
+    
 }
 
 .arrow-btn {
