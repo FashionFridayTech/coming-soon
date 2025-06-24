@@ -222,27 +222,35 @@ nav ul li:hover {
     font-weight: 100;
 }
 
-@media (max-width: 768px) {
-    .hero {
+
+/* ====== responive design ====== */
+
+@media (max-width: 900px) {
+        .hero {
         grid-template-columns: 1fr;
+    }
+
+    .hero-right,
+    .hero-left {
+        height: 100vh;
+        padding: 0 3%;
+    }
+    .hero-right {
+        padding-bottom: 20px;
     }
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
+
 
     .logo {
         padding-right: 0;
         border-right: none;
     }
 
-    .hero-right,
-    .hero-left {
-        height: 100vh;
-    }
-
-    nav {
-        display: none;
+    .logo img {
+        height: 20px;
     }
 
     .search-box {
@@ -290,4 +298,16 @@ nav ul li:hover {
         font-size: 1.2rem;
         border-radius: 12px;
     }
+}
+
+@media (max-width: 1000px) {
+nav {
+        display: none;
+    }
+ .logo {
+        padding-right: 0;
+        border-right: none;
+    }
+
+
 }
