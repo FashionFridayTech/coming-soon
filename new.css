@@ -162,7 +162,7 @@ nav ul li:hover {
     font-size: larger;
 }
 
-.arrow-btn a {
+.hero-desc a {
     color: #ffffff;
 }
 
@@ -230,17 +230,19 @@ nav ul li:hover {
 /* ====== responive design ====== */
 
 @media (max-width: 900px) {
-        .hero {
+    .hero {
         grid-template-columns: 1fr;
     }
 
     .hero-right,
     .hero-left {
         height: 100vh;
-        padding: 0 3%;
     }
+
     .hero-right {
+        padding: 0 3%;
         padding-bottom: 20px;
+
     }
 
 }
@@ -268,11 +270,11 @@ nav ul li:hover {
         font-size: 20px;
     }
 
-    .hero-left-gallery{
+    .hero-left-gallery {
         height: 70%;
     }
 
-        .hero-left{
+    .hero-left {
         justify-content: start;
     }
 
@@ -291,9 +293,13 @@ nav ul li:hover {
         font-size: 0.8rem;
         padding: 8px;
         padding-block: 12px;
-        height: 20%;
+        height: 30%;
         justify-content: center;
         gap: 10px;
+    }
+
+    .hero-desc a {
+        width: 100%;
     }
 
     .arrow-btn {
@@ -305,10 +311,11 @@ nav ul li:hover {
 }
 
 @media (max-width: 1000px) {
-nav {
+    nav {
         display: none;
     }
- .logo {
+
+    .logo {
         padding-right: 0;
         border-right: none;
     }
