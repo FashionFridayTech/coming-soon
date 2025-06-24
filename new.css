@@ -18,6 +18,10 @@ header {
     background-color: #0d0d0d;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     padding-right: 90px;
     border-right: #b6b6b6 solid 2px;
